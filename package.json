@@ -1,5 +1,26 @@
 {
-  "dependencies": {
-    "the-new-css-reset": "^1.11.1"
+  "name": "mern-shopping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server --ignore client",
+    "develop": "concurrently \"cd server && npm run start\" \"cd client && npm run dev\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+    "dependencies": {
+      "@fortawesome/fontawesome-svg-core": "^1.2.28",
+      "@fortawesome/free-brands-svg-icons": "^5.13.0",
+      "the-new-css-reset": "^1.11.1"
+
+    },
+  
+  "devDependencies": {
+    "concurrently": "^5.1.0"
   }
 }
